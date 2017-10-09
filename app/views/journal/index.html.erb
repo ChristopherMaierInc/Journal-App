@@ -1,0 +1,14 @@
+<h1><%= params[:name] %></h1>
+<h1>Welcome Wor!ddd</h1>
+
+<%= simple_form_for @post, url: '/create' do |f| %>
+  <%= f.input :title %>
+  <%= f.input :content %>
+  <%= f.button :submit %>
+<% end %>
+
+<% @posts.each do |p| %>
+<h2><%= p.title %></h2>
+<p><%= p.content %></p>
+<hr>
+<% end %>
