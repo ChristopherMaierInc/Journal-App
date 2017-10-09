@@ -1,7 +1,6 @@
-<h1><%= params[:name] %></h1>
 <h1>Welcome Wor!ddd</h1>
 
-<%= simple_form_for @post, url: '/create' do |f| %>
+<%= simple_form_for @post, url: 'create' do |f| %>
   <%= f.input :title %>
   <%= f.input :content %>
   <%= f.button :submit %>
